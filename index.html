@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To小鹿 · 生日快乐</title>
+  <meta name="description" content="献给最亲爱的你，一份梦幻魔法少女风格的生日祝福。">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎀</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&family=ZCOOL+KuaiLe&family=Ma+Shan+Zheng&family=Great+Vibes&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+
+  <!-- ========== 入场封面（flayks 风拼贴海报） ========== -->
+  <div class="entrance" id="entrance">
+    <div class="cover">
+      <div class="cover-chapter">✦ 生日篇 ✦</div>
+      <div class="cover-main">
+        <div class="cover-head">
+          <h1 class="cover-title">
+            <span class="cover-title-zh">To小鹿</span>
+            <span class="cover-title-en outline">HAPPY</span>
+            <span class="cover-title-en solid">BIRTHDAY</span>
+          </h1>
+        </div>
+        <div class="cover-photos" id="coverPhotos"><!-- 朋友照片拼贴由 script.js 生成 --></div>
+      </div>
+      <div class="cover-foot">
+        <div>
+          <p class="cover-meta"></p>
+          <p class="cover-hint">进入后 · 左右滑动或点击箭头翻页</p>
+        </div>
+        <button class="btn btn-gold btn-large" id="enterBtn">请查收591对你的爱呀</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 背景层：多只可爱兔子 + 闪烁星光（由 script.js 生成） -->
+  <div class="bg-layer" id="bgLayer" aria-hidden="true"></div>
+
+  <!-- ========== 左右翻页容器 ========== -->
+  <div class="slider" id="slider">
+
+    <!-- 第 1 页：相识天数 -->
+    <section class="slide" data-title="相识天数">
+      <div class="slide-inner">
+        <h1 class="hero-title gold-text">Happy Birthday</h1>
+        <p class="hero-name"></p>
+        <div class="card days-card">
+          <span class="card-corner tl"></span>
+          <span class="card-corner tr"></span>
+          <span class="card-corner bl"></span>
+          <span class="card-corner br"></span>
+          <p class="days-label">我们已经相识了</p>
+          <div class="days-number gold-text" id="daysNumber">0</div>
+          <p class="days-unit">天</p>
+          <p class="days-date" id="daysDate">从 2022-09-01 走到今天</p>
+          <p class="days-wish">谢谢你成为了我的几分之几 ✨</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 第 2 页：我们的故事（回忆 + 时间轴合并） -->
+    <section class="slide" data-title="我们的故事">
+      <div class="slide-inner">
+        <h2 class="section-title">591的小学生日记</h2>
+        <p class="section-sub"></p>
+        <div class="memories" id="memories"><!-- 由 script.js 生成，可自行编辑添加 --></div>
+      </div>
+    </section>
+
+    <!-- 第 3 页：附上一些萌萌的照片嘿嘿 -->
+    <section class="slide" data-title="萌萌的照片">
+      <div class="slide-inner">
+        <h2 class="section-title"> 附上一些萌萌的照片嘿嘿...我好想你呀...</h2>
+        <div class="gallery" id="cuteGallery"><!-- 由 script.js 生成 --></div>
+      </div>
+    </section>
+
+    <!-- 第 4 页：写给暖暖的话（信封背景） -->
+    <section class="slide slide-letter" data-title="写给你的话">
+      <div class="slide-inner">
+        <div class="envelope-seal">♥</div>
+        <h2 class="section-title">一些想说的话</h2>
+        <p class="section-sub"></p>
+        <div class="letter-card">
+          <div class="letter-body">
+            <!-- ★ 在这里写你想对她说的话（可自由增删段落） -->
+            <p>亲爱的小鹿：</p>
+            <p>  生日快乐呀！！！</p>
+            <p>  希望你能满意这一版，这是我第一次自己做出一个网页，我很高兴它的用途是给你的生日祝福！有没有发现整个页面是薄巧的配色以及背景的暖暖，这都是我的小巧思哟因为我记得你喜欢这些！由于是第一次做所以我非常生疏以致于做了好几天，这几天里每天我看到我们的合照都会惊叹我们居然一起做过这么多事情。从高二到现在，时间不知不觉走了好久，我们也携手走过了好长的一段路，在彼此的青春里我们都占据了很大一个部分呀！</p>
+            <p>  高中的时候我没有细想过我们大学会是什么样的，那个时候我们的世界里只有高考、课间的闲聊和从食堂到教学楼路上的晚霞，真想抛开这一切绩点实习论文重新过一遍这惬意的时光呀。
+            <p>  好神奇呀，过了这么久我们还是好朋友，大家都在奔向自己的未来但又紧紧连结在一起。其实每次再见到你都和我记忆里没有什么差别，我们还是很幼稚，比如一起做小纸人然后给它们取名。大伯母！！我也没有想过我们居然都读了经管专业，但是我们小鹿一直是个很优秀很上进的小女孩呀，妈妈在你的身后特别感动地看着你的成长。你能有方向有目标地做了好多好多事，妈妈特别为你骄傲。你在我心里的形象就是一边流泪一边解决问题的可爱女孩^ ^（但是很多事情我都是看了你的朋友圈才知道的！请主动给我发信息让妈妈知道你的近况好吗！！！不要一个人默默地emo妈妈会很担心急得团团转！妈妈特别非常极其愿意听你讲你身边发生的事情听你遇到的和新朋友的故事的！</p>
+            <p>  写到这里我想说谢谢你成为我的朋友呀，谢谢你能包容我能一直和我一起玩，好幸福呀！我好幸运能参与你的成长...在以后的日子里我们还要像这样幸福！
+            <p>  from爱你的591
+        
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 第 5 页：生日快乐 -->
+    <section class="slide" data-title="生日快乐">
+      <div class="slide-inner">
+        <h2 class="section-title">🎂 生日快乐</h2>
+        <p class="section-sub">最后是一份生日祝福</p>
+        <button class="btn btn-gold btn-large" id="birthdayBtn">打开生日寄语</button>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- 翻页箭头 + 圆点指示器 -->
+  <button class="nav-arrow nav-prev" id="navPrev" aria-label="上一页">‹</button>
+  <button class="nav-arrow nav-next" id="navNext" aria-label="下一页">›</button>
+  <div class="dots" id="dots"></div>
+
+  <!-- ========== 图片放大灯箱 ========== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="关闭">×</button>
+    <img src="" alt="" class="lightbox-img" id="lightboxImg">
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+
+  <!-- ========== 暖暖生日弹窗 ========== -->
+  <div class="modal" id="birthdayModal" aria-hidden="true">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="关闭">×</button>
+      <div class="modal-card-inner">
+        <div class="birthday-banner">🎂 🎉 🎂</div>
+        <h2 class="birthday-title gold-text">Happy Birthday</h2>
+        <p class="birthday-for">致 · 暖暖</p>
+        <div class="birthday-letter">
+          <p>亲爱的小鹿：</p>
+          <p>  再祝一遍生日快乐！</p>
+          <p>  首先祝你能享受浪漫的21岁，勇敢去做想做的事情！
+          <p>  其次希望你能一直幸福，身边围绕的都是善良的人类，如果你幸福的话我真的会比你先流泪的♪(´ε｀ )
+          <p>  最后祝我们能一直陪在彼此的身边！爱你呀！！我在九千公里之外非常非常想念你...希望能快快见面呀！
+          <p class="birthday-sign">—— 永远爱你的591</p>
+        </div>
+        <button class="btn btn-gold btn-block" id="modalThank">收下这份心意 💗</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js?v=7"></script>
+</body>
+</html>
